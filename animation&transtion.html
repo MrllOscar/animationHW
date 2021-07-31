@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>獲得了新的知識</title>
+  <style>
+    body {
+      background-color: #333;
+      margin: 0;
+      animation: shiny 1.5s linear infinite;
+    }
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top:0 ;
+      left:0 ;
+    }
+    img.cat{
+      /* background:url(../../image/somethingCat.png) no-repeat; */
+      /* display: inline; */
+      /* border: 0; */
+      width: 460px;
+      height: 460px;
+      position: absolute;
+      /* transition: display 1s ease-in   ; */
+    }
+    /* img.cat:hover{
+      display: none;
+      transition: display 10s ease-out   ;
+    } */
+    /* img.cat::after{
+      background: url(../../image/PangTiger.png) no-repeat;
+      width: 460px;
+      height: 420px;
+      opacity: 0.5;
+      transition: background 0.5s ,opacity 0.5s , width 0.5s ,height 0.5s ;
+    transition-property: width, height,opacity;
+      transition-duration: 1s,1s,2s;
+      transition-timing-function: ease-in,ease,ease-out;
+      transition-delay: 0s,1s,2s;
+    } */
+    /* img.cat:hover::after{
+      opacity: 1;
+      width: 680px;
+      height: 640px;
+    } */
+    /* img.cat:hover{
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    } */
+    img.pang{
+      width: 480px;
+      height: 440px;
+      opacity: 0;
+      /* background: url(../../image/PangTiger.png); */
+      transition-property: opacity, width, height;
+      transition-duration: 1s,2s,3s;
+      transition-timing-function: ease-in,ease,ease-out;
+      transition-delay: 0s,1s,2s;
+      position: absolute;
+    }
+    img.pang:hover{
+      width: 960px;
+      height: 900px;
+      opacity: 1;
+    }
+    footer{
+      bottom:0;
+    }
+
+    aside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    @keyframes shiny {
+
+      0%,
+      100% {
+        background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+          linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+          linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%),
+          radial-gradient(circle,rgba(0, 0, 255, .8) 0%,rgba(0, 255, 0, .8) 50%,rgba(255, 0, 0, .8) 100%);
+          
+      }
+
+      12.5%,37.5%,67.5% {
+        background: linear-gradient(336deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+          linear-gradient(217deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+          linear-gradient(127deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%),
+          radial-gradient(circle,rgba(255, 0, 0, .8) 0%,rgba(0, 0, 255, .8) 50%,rgba(0, 255, 0, .8) 100%);
+      }
+
+      25%,50%,75% {
+        background: linear-gradient(127deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+          linear-gradient(336deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+          linear-gradient(217deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%),
+          radial-gradient(circle,rgba(0, 255, 0, .8) 0%,rgba(255, 0, 0, .8) 50%,rgba(0, 0, 255, .8) 100%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <aside>
+    <div>
+      <img class="cat" src="./img/somethingCat.png" alt="Get a new knowledge">
+      <img class="pang" src="./img/PangTiger.png">
+      <!--  src="../../image/somethingCat.png" alt="Get a new knowledge" -->
+      <footer>A New Knowledge</footer>
+    </div>
+  </aside>
+</body>
+
+</html>

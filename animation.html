@@ -23,11 +23,7 @@
       left: 50%;
     }
 
-    aside:hover {
-      background-image: url(../image/somethingCatDance.gif);
-      width: 100vw;
-      height: 100vh;
-    }
+
     /*線*/
     .mid {
       /* position: relative ;
@@ -181,7 +177,8 @@
       border-radius: 50%;
     }
 
-    img.cat {
+    .cat {
+      background-image: url(./img/somethingCat.png);
       width: 460px;
       height: 460px;
       position: absolute;
@@ -191,6 +188,17 @@
       transition-delay: 0s, 1s, 2s;
     }
 
+    aside:hover {
+      background-image: url(./img/rainblowFlog.gif);
+      width: 100vw;
+      height: 100vh;
+    }
+    aside:hover .cat {
+      background-image: url(./img/somethingCatDance.gif);
+      background-size:cover;
+      width: 460px;
+      height: 460px;
+    }
 
     /* img.cat:hover {
       width: 960px;
@@ -331,7 +339,8 @@
       <div class="loading"></div>
     </div>
     <div class="main">
-    <img class="cat" src="../image/somethingCat.png" alt="Get a new knowledge">
+    <div class="cat" title="Get a new knowledge"></div>
+    <!-- <img class="cat" src="./img/somethingCat.png" alt="Get a new knowledge"> -->
     <!-- <footer>A New Knowledge</footer> -->
     
   </div>

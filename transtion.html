@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打球阿你當球</title>
+  <style>
+    body{
+      background:rgb(235, 172, 117);
+    }
+    .tranbox{
+      width: 100vh;
+      height: 100vh;
+    }
+    .man {
+      border: 1px solid #ccc0;
+      position: relative;
+    }
+
+    .man>*:not(.ball) {
+      background: #000;
+      display: flex;
+    }
+
+    .head {
+      position: absolute;
+      border-radius: 50%;
+      margin: 115px 100px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .body {
+      position: absolute;
+      height: 100px;
+      width: 10px;
+      border-radius: 5px;
+      margin: 150px 120px;
+    }
+
+    .leftHand {
+      position: absolute;
+      height: 50px;
+      width: 10px;
+      border-radius: 5px;
+      margin: 175px 110px;
+      transform: rotate(200deg);
+    }
+
+    .rightHand {
+      position: absolute;
+      height: 50px;
+      width: 10px;
+      border-radius: 5px;
+      margin: 150px 135px;
+      transform: rotate(30deg);
+      transform: origin 0;
+      transition: left 1s 0.5s;
+    }
+
+    .rightFoot {
+      position: absolute;
+      height: 70px;
+      width: 10px;
+      border-radius: 5px;
+      margin: 245px 111px;
+      transform: rotate(15deg);
+    }
+
+    .leftFoot {
+      position: absolute;
+      height: 70px;
+      width: 10px;
+      border-radius: 5px;
+      margin: 245px 125px;
+      transform: rotate(350deg);
+    }
+
+
+    .line {
+      position: absolute;
+      margin: 26px 0px;
+      width: 55px;
+      height: 3px;
+      background: #000;
+      transform: rotate(90deg);
+    }
+
+    .b {
+      transform: rotate(180deg);
+    }
+
+    .c {
+      width: 48px;
+      margin: 26px 15px;
+    }
+
+    .d {
+      width: 48px;
+      margin: 26px -8px;
+    }
+
+    .p {
+      left: 400px
+    }
+
+    .pig>.rightHand {
+      margin: 175px 130px;
+      transform: rotate(160deg);
+    }
+
+    .ball {
+      position: absolute;
+      border-radius: 50%;
+      top: 105px;
+      left: 140px;
+      width: 55px;
+      height: 55px;
+      background: #f50;
+      transition: left 0.5s 0.5s,transform 0.5s 0.5s, top 0.5s 1s, transform 0.1s 1s;
+    }
+
+    .ballbox {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+
+    .ph {
+      transition: left 0.5s 0.8s, transform 0.5s 0s;
+    }
+
+    .tranbox:hover .ball {
+      top: -135px;
+      left: 500px;
+      transform: rotate(1800deg);
+    }
+    .tranbox:hover .mr{
+      transform: rotate(45deg);
+    }
+    .tranbox:hover .ph {
+      left: 1800px;
+      transform: rotate(1800deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tranbox">
+  <div class="man veromca">
+    <div class="ball">
+      <div class="line a"></div>
+      <div class="line b"></div>
+      <div class="line c"></div>
+      <div class="line d"></div>
+    </div>
+    <div class="head"></div>
+    <div class="mr rightHand"></div>
+    <div class="leftHand"></div>
+    <div class="body"></div>
+    <div class="rightFoot"></div>
+    <div class="leftFoot"></div>
+  </div>
+  <div class="man pig">
+    <div class="p head ph"></div>
+    <div class="p rightHand"></div>
+    <div class="p leftHand"></div>
+    <div class="p body"></div>
+    <div class="p rightFoot"></div>
+    <div class="p leftFoot"></div>
+  </div>
+</div>
+</body>
+
+</html>
