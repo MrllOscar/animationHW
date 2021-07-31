@@ -12,7 +12,7 @@
       margin: 0;
       animation: shiny 1.5s linear infinite;
     }
-    div{
+    .page{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -80,7 +80,21 @@
       align-items: center;
       height: 100vh;
     }
-
+    .link{
+      position: absolute;
+      width: 100vw;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 40px;
+      font-weight: bolder;
+    }
+    a{
+      text-decoration: none;
+      color: #ddd
+    }
+    .mar{
+      margin-top: 5rem;
+    }
     @keyframes shiny {
 
       0%,
@@ -110,8 +124,10 @@
 </head>
 
 <body>
+  <div class="link"><a href="./animation.html">animation</a><a href="#">animation&transtion</a><a href="./transtion.html">transtion</a></div>
+  <div class="link mar">Hover This ↓</div>
   <aside>
-    <div>
+    <div class="page">
       <img class="cat" src="./img/somethingCat.png" alt="Get a new knowledge">
       <img class="pang" src="./img/PangTiger.png">
       <!--  src="../../image/somethingCat.png" alt="Get a new knowledge" -->
