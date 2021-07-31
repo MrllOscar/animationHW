@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>獲得了新的知識</title>
+  <style>
+
+    body {
+      background-color: #333;
+      animation: shiny 1.5s linear infinite;
+      overflow: hidden;
+    }
+    /*圖片*/
+    div.main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    aside:hover {
+      background-image: url(../image/somethingCatDance.gif);
+      width: 100vw;
+      height: 100vh;
+    }
+    /*線*/
+    .mid {
+      /* position: relative ;
+      width: 100vw;
+      height: 100vh; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 0;
+      left: 0;
+      -webkit-animation: loading 0.5s infinite linear;
+      -moz-animation: loading 0.5s infinite linear;
+      -o-animation: loading 0.5s infinite linear;
+      animation: loading 0.5s infinite linear;
+    }
+    div.line {
+      display: flex;
+      flex-wrap: wrap;
+      width: 2000px;
+      height: 2px;
+      background: #FFF;
+      position: absolute;
+      box-shadow: 0px 0px 15px #FF0, 0 1px 10px #FFF, 0px 1px 15px #FF0;
+      /* transition: 1s ease-in-out; */
+    }
+
+    /* img {
+      position: absolute;
+    } */
+
+    /* .allLine{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+    } */
+
+    /* .line:hover {
+      transform: rotate(1800deg);
+    } */
+
+    .a {
+      transform: rotate(150deg);
+    }
+
+    .b {
+      transform: rotate(17deg);
+    }
+
+    .c {
+      transform: rotate(28deg);
+    }
+
+    .d {
+      transform: rotate(40deg);
+    }
+
+    .e {
+      transform: rotate(51deg);
+    }
+
+    .f {
+      transform: rotate(60deg);
+    }
+
+    .g {
+      transform: rotate(69deg);
+    }
+
+    .h {
+      transform: rotate(73deg);
+    }
+
+    .i {
+      transform: rotate(77deg);
+    }
+
+    .j {
+      transform: rotate(85deg);
+    }
+
+    .k {
+      transform: rotate(89deg);
+    }
+
+    .l {
+      transform: rotate(93deg);
+    }
+
+    .m {
+      transform: rotate(99deg);
+    }
+
+    .n {
+      transform: rotate(101deg);
+    }
+
+    .o {
+      transform: rotate(105deg);
+    }
+
+    .p {
+      transform: rotate(111deg);
+    }
+
+    .q {
+      transform: rotate(117deg);
+    }
+
+    .r {
+      transform: rotate(125deg);
+    }
+
+    .s {
+      transform: rotate(134deg);
+    }
+
+    .t {
+      transform: rotate(140deg);
+    }
+
+    .u {
+      transform: rotate(147deg);
+    }
+
+    .v {
+      transform: rotate(45deg);
+    }
+
+    .w {
+      transform: rotate(38deg);
+    }
+
+    .x {
+      transform: rotate(35deg);
+    }
+
+    .y {
+      transform: rotate(33deg);
+    }
+
+    .z {
+      transform: rotate(143deg);
+    }
+
+    .mid {
+      width: 550px;
+      height: 550px;
+      /* background: radial-gradient(circle, #FFFe 0%, #aaa4 80%, #ddd 81%, #ddd1 100%); */
+      border-radius: 50%;
+    }
+
+    img.cat {
+      width: 460px;
+      height: 460px;
+      position: absolute;
+      transition-property: transform, width, height;
+      transition-duration: 1s, 2s, 3s;
+      transition-timing-function: ease-in, ease, ease-out;
+      transition-delay: 0s, 1s, 2s;
+    }
+
+
+    /* img.cat:hover {
+      width: 960px;
+      height: 900px;
+      transform: rotate(720deg);
+    } */
+
+    aside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loading {
+      position: absolute;
+      border: 250px solid #eee9;
+      border-right: 250px solid rgba(255, 255, 255, 0);
+      border-bottom: 250px solid #bbb3;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      -webkit-animation: loading 0.5s infinite linear;
+      -moz-animation: loading 0.5s infinite linear;
+      -o-animation: loading 0.5s infinite linear;
+      animation: loading 0.5s infinite linear;
+
+    }
+
+    /* .main {
+      -webkit-animation: loading 1s infinite linear;
+      -moz-animation: loading 1s infinite linear;
+      -o-animation: loading 1s infinite linear;
+      animation: loading 1s infinite linear;
+    } */
+
+    @keyframes shiny {
+
+      0%,
+      100% {
+        background: linear-gradient(217deg, #450bd9, #24dc40 70.71%, #3b2242 85%),
+          linear-gradient(127deg, #24dc40, #05440f 30%, #3b2242 50%, #2c3031 60%, #450bd9 80%, #190f65 90%),
+          linear-gradient(336deg, #3b2242, #2c3031 70.71%, #190f65 85%),
+          radial-gradient(circle, #450bd9 0%, #24dc40 50%, #3b2242 100%);
+
+      }
+
+      12.5%,
+      37.5%,
+      67.5% {
+        background: linear-gradient(336deg, #24dc40 80%, #05440f 90%, #3b2242 0%, #2c3031 30%, #450bd9 50%, #190f65 60%),
+          linear-gradient(217deg, #24dc40 0%, #05440f 30%, #3b2242 50%, #2c3031 60%, #450bd9 80%, #190f65 90%),
+          linear-gradient(127deg, #24dc40 50%, #05440f 60%, #3b2242 80%, #2c3031 90%, #450bd9 0%, #190f65 30%),
+          radial-gradient(circle, #3b2242 0%, #450bd9 50%, #24dc40 100%);
+      }
+
+      25%,
+      50%,
+      75% {
+        background: linear-gradient(127deg, #450bd9, #24dc40 70.71%, #3b2242 85%),
+          linear-gradient(336deg, #24dc40, #05440f 30%, #3b2242 50%, #2c3031 60%, #450bd9 80%, #190f65 90%),
+          linear-gradient(217deg, #3b2242, #2c3031 70.71%, #190f65 85%),
+          radial-gradient(circle, #24dc40 0%, #3b2242 50%, #450bd9 100%);
+      }
+    }
+
+    @-webkit-keyframes loading {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @-moz-keyframes loading {
+      from {
+        -moz-transform: rotate(0deg);
+      }
+
+      to {
+        -moz-transform: rotate(360deg);
+      }
+    }
+
+    @-o-keyframes loading {
+      from {
+        -o-transform: rotate(0deg);
+      }
+
+      to {
+        -o-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes loading {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <aside>
+    <div class="mid">
+      <div class="line a"></div>
+      <div class="line b"></div>
+      <div class="line c"></div>
+      <div class="line d"></div>
+      <div class="line e"></div>
+      <div class="line f"></div>
+      <div class="line g"></div>
+      <div class="line h"></div>
+      <div class="line i"></div>
+      <div class="line j"></div>
+      <div class="line k"></div>
+      <div class="line l"></div>
+      <div class="line m"></div>
+      <div class="line n"></div>
+      <div class="line o"></div>
+      <div class="line p"></div>
+      <div class="line q"></div>
+      <div class="line r"></div>
+      <div class="line s"></div>
+      <div class="line t"></div>
+      <div class="line u"></div>
+      <div class="line v"></div>
+      <div class="line w"></div>
+      <div class="line x"></div>
+      <div class="line y"></div>
+      <div class="line z"></div>
+      <div class="loading"></div>
+    </div>
+    <div class="main">
+    <img class="cat" src="../image/somethingCat.png" alt="Get a new knowledge">
+    <!-- <footer>A New Knowledge</footer> -->
+    
+  </div>
+</aside>
+</body>
+
+</html>
